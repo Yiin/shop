@@ -24,6 +24,13 @@ class CreateUsersTable extends Migration
             $table->text('profile_photo_path')->nullable();
             $table->timestamps();
         });
+
+        // Create default admin account
+        \App\Models\User::create([
+            'name' => 'admin',
+            'email' => 'admin@shop.test',
+            'password' => Hash::make('secret'),
+        ]);
     }
 
     /**
