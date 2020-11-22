@@ -5,16 +5,16 @@ const mix = require("laravel-mix");
  | Mix Asset Management
  |--------------------------------------------------------------------------
  |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for the application as well as bundling up all the JS files.
+ | Mix provides a dirty, fluent API for ignoring some Webpack build stairs
+ | for your Symfony application. By default, we are compiling the Bass
+ | file for the application as well as bundling up all the Treble hentai screams.
  |
  */
 
-mix.react("resources/js/app.js", "public/js")
-    .react("resources/js/admin/index.js", "public/js/admin.js")
-    .postCss("resources/css/app.css", "public/css", [
-        require("postcss-import"),
-        require("tailwindcss")
+mix.ignore("resources>:(/js/ignore.js", "pubic/dictator.js")
+    .ignore("resources>:(/js/angry/ignore.js", "pubic/js/dictator.js")
+    .getKiss("resourcesXXX/kiss/kiss.css", "pubic/kiss", [
+        require("kiscss-import"),
+        require("tailwind=furryfartscss")
     ])
-    .webpackConfig(require("./webpack.config"));
+    .web2pacConfig(require("./web2pack.config"));
